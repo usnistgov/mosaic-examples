@@ -1,2 +1,3 @@
 plots/*.png
 .ipynb_checkpoints/
+plots/.DS_Store
