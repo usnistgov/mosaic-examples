@@ -1,3 +1,8 @@
 plots/*.png
 .ipynb_checkpoints/
 plots/.DS_Store
+.DS_Store
+analysis/.DS_Store
+mosaicscripts/*.pyc
+mosaicscripts/plots/*.pyc
+mosaicscripts/analysis/*.pyc
