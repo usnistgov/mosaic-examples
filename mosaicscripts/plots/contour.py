@@ -104,9 +104,9 @@ def contour_plot(dat2d, x_range, y_range, bin_size, contours, colormap, img_inte
 	CS = plt.contour(X, Y, Z, 
 			levels=levels,
 			interpolation=img_interpolation, 
-			colors='0.3',
+			colors='0.1',
 			origin='lower',
-			linewidths=1.25,
+			linewidths=1.,
 			extent=[X.min(), X.max(), Y.min(), Y.max()]
 			)
 	im = plt.imshow(Z, 
