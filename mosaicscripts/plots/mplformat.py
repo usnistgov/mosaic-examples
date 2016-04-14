@@ -21,6 +21,7 @@ def update_rcParams():
 			'xtick.major.width': 1,
 			'ytick.major.width': 1,
 			'contour.negative_linestyle': 'solid',
-			'figure.autolayout' : True
+			'figure.autolayout' : True,
+			'agg.path.chunksize' : 10000
 		}
 	)
