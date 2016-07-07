@@ -10,7 +10,7 @@
 		12/26/15		AB	Initial version
 """
 # -*- coding: utf-8 -*-
-import mosaic.sqlite3MDIO as sql
+import mosaic.mdio.sqlite3MDIO as sql
 import numpy as np
 
 from mosaic.utilities.analysis import caprate

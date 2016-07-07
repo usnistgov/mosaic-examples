@@ -8,20 +8,15 @@
 		12/12/15	AB	Generalized plot function to allow different data types
 		11/19/15	AB	Initial version
 """
-import mosaic.abfTrajIO as abf
-import mosaic.qdfTrajIO as qdf
-import mosaic.binTrajIO as bin
-import mosaic.tsvTrajIO as tsv
-
 import matplotlib.pyplot as plt
 import numpy as np
 import mosaicscripts.plots.mplformat as mplformat
 
 data_types= {
-	"abf" : [abf.abfTrajIO, "*.abf"],
-	"qdf" : [qdf.qdfTrajIO, "*.qdf"],
-	"bin" : [bin.binTrajIO, "*.bin"],
-	"tsv" : [tsv.tsvTrajIO, "*.tsv"]
+	"abf" : [abf.trajio.abfTrajIO, "*.abf"],
+	"qdf" : [qdf.trajio.qdfTrajIO, "*.qdf"],
+	"bin" : [bin.trajio.binTrajIO, "*.bin"],
+	"tsv" : [tsv.trajio.tsvTrajIO, "*.tsv"]
 }
 def PlotTimeseries(dir, data_type, t0, t1, Fs, **kwargs):
 	"""
