@@ -12,11 +12,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import mosaicscripts.plots.mplformat as mplformat
 
+import mosaic.trajio.abfTrajIO as abf
+import mosaic.trajio.qdfTrajIO as qdf
+import mosaic.trajio.binTrajIO as bin
+import mosaic.trajio.tsvTrajIO as tsv
 data_types= {
-	"abf" : [abf.trajio.abfTrajIO, "*.abf"],
-	"qdf" : [qdf.trajio.qdfTrajIO, "*.qdf"],
-	"bin" : [bin.trajio.binTrajIO, "*.bin"],
-	"tsv" : [tsv.trajio.tsvTrajIO, "*.tsv"]
+	"abf" : [abf.abfTrajIO, "*.abf"],
+	"qdf" : [qdf.qdfTrajIO, "*.qdf"],
+	"bin" : [bin.binTrajIO, "*.bin"],
+	"tsv" : [tsv.tsvTrajIO, "*.tsv"]
 }
 def PlotTimeseries(dir, data_type, t0, t1, Fs, **kwargs):
 	"""
